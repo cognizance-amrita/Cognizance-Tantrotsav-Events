@@ -67,7 +67,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:center
+    justify-content:center;
+    margin-bottom:50px;
 }
 
 hr{
@@ -79,159 +80,43 @@ hr{
 
 /*=============================================================== Education ===============================================================*/
 
-.main {
-	width: 100%;
-	height: auto;
-    margin-top: 50px;
-	display: grid;
-	place-items: center;
-	padding: 50px;
+.timecontainer li{
+    background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    margin-bottom: 50px;
 }
 
-.timecontainer {
-	width: 100%;
-	height: auto;
-	margin: auto 0;
-	position: relative;
+.heading{
+    color: white;
+    font-size: larger;
+    margin-bottom: 10px;
 }
 
-.timecontainer ul {
-	list-style: none;
-}
-
-.timecontainer ul::after {
-	content: " ";
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	left: 50%;
-	top: 0;
-	transform: translateX(-50%);
-	background-color: white;
-}
-
-.timecontainer ul li{
-	width: 50%;
-	height: auto;
-	padding: 15px 20px;
-	background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
-	border-radius: 8px;
-	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
-	position: relative;
-	margin-bottom: 30px;
-	z-index: 99;
-}
-
-/*
-.timecontainer ul li:nth-child(4) {
-	margin-bottom: 0;
-}*/
-
-.timecontainer ul li .circle {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: white;
-	top: 0;
-	display: grid;
-	place-items: center;
-}
-
-.circle::after{
-	content: ' ';
-	width: 12px;
-	height: 12px;
-	background-color: #7f00ff;
-	border-radius: 50%;
-}
-
-.timecontainer ul li:nth-child(odd) .circle {
-	transform: translate(50%, -50%);
-	right: -30px;
-}
-
-.timecontainer ul li:nth-child(even) .circle {
-	transform: translate(-50%, -50%);
-	left: -30px;
-}
-
-.lastcircle {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: white;
-	display: grid;
-	place-items: center;
-}
-
-.lastcircle::after{
-    transform: translate(-50%,-50%);
-	content: ' ';
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-}
-
-.timecontainer ul li .date {
-	position: absolute;
-	width: fit-content;
-    padding: 10px;
-	height: fit-content;
-	background-color: lightblue;
-	border-radius: 15px;
-	top: -45px;
-	display: grid;
-	place-items: center;
-	color: black;
+p{
     font-weight: bolder;
-	font-size: 20px;
-	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+    justify-self: left;
 }
 
-.timecontainer ul li:nth-child(odd) {
-	float: left;
-	clear: right;
-	text-align: left;
-	transform: translateX(-30px);
+strong{
+    color: white;
 }
 
-.timecontainer ul li:nth-child(odd) .date {
-	right: 20px;
-}
-
-.timecontainer ul li:nth-child(even) {
-	float: right;
-	clear: left;
-    text-align: left;
-	transform: translateX(30px);
-}
-
-.timecontainer ul li .heading {
-	font-size:larger;
-	color: white;
-}
-
-.timecontainer ul li p {
-	font-size:large;
-	color: black;
-    font-weight: bold;
-	line-height: 18px;
-	margin: 6px 0 4px 0;
-}
-
-.timecontainer ul li a {
-	font-size: medium;
-	text-decoration: none;
-	color: black;
-    font-weight: bold;
-	transition: all 0.3s ease;
+.timecontainer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+    list-style: none; 
+    padding: 0;
+    justify-self: center;
 }
 
 li div div{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-self: center;
 }
 
 
@@ -259,6 +144,7 @@ li img{
     height: 400px;
     width: auto;
     align-self: center;
+    border-radius: 10px;
 }
 
 /*=============================================================== Contact ==========================================================*/
