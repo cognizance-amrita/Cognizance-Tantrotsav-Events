@@ -110,7 +110,7 @@ hr{
 	background-color: white;
 }
 
-.timecontainer ul li {
+.timecontainer ul li{
 	width: 50%;
 	height: auto;
 	padding: 15px 20px;
@@ -192,7 +192,7 @@ hr{
 .timecontainer ul li:nth-child(odd) {
 	float: left;
 	clear: right;
-	text-align: right;
+	text-align: left;
 	transform: translateX(-30px);
 }
 
@@ -213,8 +213,9 @@ hr{
 }
 
 .timecontainer ul li p {
-	font-size:medium;
-	color: white;
+	font-size:large;
+	color: black;
+    font-weight: bold;
 	line-height: 18px;
 	margin: 6px 0 4px 0;
 }
@@ -225,6 +226,39 @@ hr{
 	color: black;
     font-weight: bold;
 	transition: all 0.3s ease;
+}
+
+li div div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+li div div a b{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+li div div a b:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5 ease;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+li img{
+    height: 400px;
+    width: auto;
+    align-self: center;
 }
 
 /*=============================================================== Contact ==========================================================*/

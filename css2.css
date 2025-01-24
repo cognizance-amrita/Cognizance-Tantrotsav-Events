@@ -2,7 +2,7 @@
 
 /*============================================================== Education ==============================================================*/
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 1300px){
     .main {
         width: 100%;
         margin-top: 30px;
@@ -37,7 +37,7 @@
     .timecontainer ul li:nth-child(odd) {
         float: right;
         clear: left;
-        text-align: right;
+        text-align: left;
         transform: translateX(0px);
     }
     .timecontainer ul li:nth-child(even) {
@@ -70,51 +70,10 @@
     }
 }
 
-
 /*================================================================ Contact ================================================================*/
 
-@media only screen and (max-width: 1020px){
-    .form-group-title{
-        width: 100px;
-    }
-    .contact-form input, .contact-form textarea{
-        width: 400px;
-    }
-    .contact-form {
-        border-spacing: 30px 20px; 
-      }
-}
-
-@media only screen and (max-width: 900px){
-
-    .contact-form input, .contact-form textarea{
-        width: 350px;
-    }
-    .contact-form {
-        border-spacing: 20px 20px; 
-    }
-}
-
-@media only screen and (max-width: 770px){
-
-    .contact-form input, .contact-form textarea{
-        width: 300px;
-    }
-    .contact-form {
-        border-spacing: 0px 20px; 
-    }
-}
 
 @media only screen and (max-width: 690px){
-    .contact-form-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contact-form {
-        border-spacing: 0px 20px; 
-    }
 
     .logos li a i{
         font-size: large;
