@@ -36,6 +36,64 @@
         justify-self: center;
     }
 
+    .timecontainer li{
+        background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    li img{
+        height: 350px;
+        width: auto;
+        align-self: center;
+        border-radius: 10px;
+    }
+
+    .joinqr{
+        height: 200px;
+        width: auto;
+        align-self: center;
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 330px){
+
+    .timecontainer li{
+        background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+        border-radius: 10px;
+        padding: 20px;
+        width: 270px;
+        margin-bottom: 50px;
+    }
+
+    li img{
+        height: 320px;
+        width: auto;
+        align-self: center;
+        border-radius: 10px;
+    }
+
+    .joinqr{
+        height: 200px;
+        width: auto;
+        align-self: center;
+        border-radius: 10px;
+    }
+
+    li div div a b, .join{
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px;
+        width: fit-content;
+        height: fit-content;
+        font-size: small;
+    }
+
 }
 
 

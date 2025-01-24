@@ -147,6 +147,13 @@ li img{
     border-radius: 10px;
 }
 
+.joinqr{
+    height: 300px;
+    width: auto;
+    align-self: center;
+    border-radius: 10px;
+}
+
 /*=============================================================== Contact ==========================================================*/
 
 
